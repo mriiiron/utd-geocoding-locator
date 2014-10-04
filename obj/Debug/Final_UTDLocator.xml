@@ -1,0 +1,64 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Final_UTDLocator
+</name>
+</assembly>
+<members>
+<member name="P:Final_UTDLocator.My.Resources.Resources.ResourceManager">
+	<summary>
+  返回此类使用的缓存的 ResourceManager 实例。
+</summary>
+</member><member name="P:Final_UTDLocator.My.Resources.Resources.Culture">
+	<summary>
+  使用此强类型资源类，为所有资源查找
+  重写当前线程的 CurrentUICulture 属性。
+</summary>
+</member><member name="T:Final_UTDLocator.My.Resources.Resources">
+	<summary>
+  一个强类型的资源类，用于查找本地化的字符串等。
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.BtnGeocodeSingle">
+	<summary>
+Returns 'UTD_Final_UTDLocator_BtnGeocodeSingle', the id declared for Add-in Button class 'BtnGeocodeSingle'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.BtnGetLocator">
+	<summary>
+Returns 'UTD_Final_UTDLocator_BtnGetLocator', the id declared for Add-in Button class 'BtnGetLocator'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.CmbLocatorStatus">
+	<summary>
+Returns 'UTD_Final_UTDLocator_CmbLocatorStatus', the id declared for Add-in ComboBox class 'CmbLocatorStatus'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.TolReverseGeocodeSingle">
+	<summary>
+Returns 'UTD_Final_UTDLocator_TolReverseGeocodeSingle', the id declared for Add-in Tool class 'TolReverseGeocodeSingle'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.BtnGeocodeTable">
+	<summary>
+Returns 'UTD_Final_UTDLocator_BtnGeocodeTable', the id declared for Add-in Button class 'BtnGeocodeTable'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.BtnClearMarkers">
+	<summary>
+Returns 'UTD_Final_UTDLocator_BtnClearMarkers', the id declared for Add-in Button class 'BtnClearMarkers'
+</summary>
+</member><member name="P:Final_UTDLocator.My.ThisAddIn.IDs.ExtUTDLocatorData">
+	<summary>
+Returns 'UTD_Final_UTDLocator_ExtUTDLocatorData', the id declared for Add-in Extension class 'ExtUTDLocatorData'
+</summary>
+</member><member name="T:Final_UTDLocator.My.ThisAddIn.IDs">
+	<summary>
+A class for looking up Add-in id strings declared in the associated configuration xml file (.esriaddinx).
+</summary>
+</member><member name="T:Final_UTDLocator.My.ThisAddIn">
+	<summary>
+A class for looking up declarative information in the associated configuration xml file (.esriaddinx).
+</summary>
+</member><member name="M:Final_UTDLocator.My.Internal.AddInStartupObject.GetThis">
+	<summary>
+ Expose this instance of Add-in class externally
+ </summary>
+</member>
+</members>
+</doc>

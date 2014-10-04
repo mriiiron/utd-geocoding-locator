@@ -1,0 +1,40 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>Final_UTDLocator</Name>
+  <AddInID>{9a85e754-61bd-4168-ba93-44140081320d}</AddInID>
+  <Description>Type in a description for this Add-in.</Description>
+  <Version>1.0</Version>
+  <Image>Images\Final_UTDLocator.png</Image>
+  <Author>Caiyi</Author>
+  <Company>UTD</Company>
+  <Date>2014/4/28</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR" library="Final_UTDLocator.dll" namespace="Final_UTDLocator">
+    <ArcMap>
+      <Commands>
+        <Button id="UTD_Final_UTDLocator_BtnGeocodeSingle" class="BtnGeocodeSingle" message="Geocode a single address." caption="Geocode Single" tip="Geocode Single" category="Add-In Controls" image="Images\BtnGeocodeSingle.png" />
+        <Button id="UTD_Final_UTDLocator_BtnGetLocator" class="BtnGetLocator" message="Open the UTD locator. If not exist, create one." caption="Open or Create Locator" tip="Open or Create Locator" category="Add-In Controls" image="Images\BtnGetLocator.png" />
+        <ComboBox id="UTD_Final_UTDLocator_CmbLocatorStatus" class="CmbLocatorStatus" message="Shows the status of UTD Locator." caption="Locator Status: " tip="Locator Status" category="Add-In Controls" image="Images\cmbLocatorStatus.png" sizeString="WWWWWWWW" rows="2" itemSizeString="WWWWWWWW" showCaption="true" />
+        <Tool id="UTD_Final_UTDLocator_TolReverseGeocodeSingle" class="TolReverseGeocodeSingle" message="Point on the map to perform a reverse geocoding." caption="Reverse Geocode Single" tip="Reverse Geocode Single" category="Add-In Controls" image="Images\TolReverseGeocodeSingle.png" cursor="Images\TolReverseGeocodeSingle.cur" />
+        <Button id="UTD_Final_UTDLocator_BtnGeocodeTable" class="BtnGeocodeTable" message="Geocode a table of addresses." caption="Geocode Table" tip="Geocode Table" category="Add-In Controls" image="Images\BtnGeocodeTable.png" />
+        <Button id="UTD_Final_UTDLocator_BtnClearMarkers" class="BtnClearMarkers" message="Clear all markers on the map." caption="Clear Markers" tip="Clear Markers" category="Add-In Controls" image="Images\BtnClearMarkers.png" />
+      </Commands>
+      <Toolbars>
+        <Toolbar id="UTD_Final_UTDLocator_UT_Dallas_Locator" caption="UT Dallas Locator" showInitially="true">
+          <Items>
+            <ComboBox refID="UTD_Final_UTDLocator_CmbLocatorStatus" />
+            <Button refID="UTD_Final_UTDLocator_BtnGetLocator" />
+            <Button refID="UTD_Final_UTDLocator_BtnGeocodeSingle" />
+            <Tool refID="UTD_Final_UTDLocator_TolReverseGeocodeSingle" />
+            <Button refID="UTD_Final_UTDLocator_BtnGeocodeTable" />
+            <Button refID="UTD_Final_UTDLocator_BtnClearMarkers" />
+          </Items>
+        </Toolbar>
+      </Toolbars>
+      <Extensions>
+        <Extension id="UTD_Final_UTDLocator_ExtUTDLocatorData" class="ExtUTDLocatorData" />
+      </Extensions>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
